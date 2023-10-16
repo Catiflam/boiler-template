@@ -6,9 +6,10 @@ use Illuminate\Http\Request;
 
 class PageController extends Controller
 {
-    public function homepage()
+    public function index()
     {
-        return view('homepage');
+        $title = 'homepage';
+        return view('home', compact('title'));
 
     }
 }
